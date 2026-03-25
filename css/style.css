@@ -275,6 +275,14 @@ a {
   margin-bottom: 28px;
 }
 
+.hero-brand {
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+}
+
 .hero-title {
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 800;
@@ -520,6 +528,14 @@ a {
 
 .project-visual--sovereign {
   background: linear-gradient(135deg, #10b981, #0ea5e9);
+}
+
+.project-screenshot {
+  width: 100%;
+  max-width: 480px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xl);
+  object-fit: cover;
 }
 
 .project-mockup {
