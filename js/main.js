@@ -87,24 +87,4 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(update);
   }
 
-  // --- Contact form ---
-  const form = document.getElementById('contactForm');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      // Show success state
-      const parent = form.parentElement;
-      form.style.display = 'none';
-
-      const success = document.createElement('div');
-      success.className = 'form-success';
-      success.innerHTML = `
-        <div class="form-success-icon">&#10003;</div>
-        <h3>Message Sent!</h3>
-        <p>Thank you for reaching out. We'll get back to you soon.</p>
-      `;
-      parent.insertBefore(success, form);
-    });
-  }
 });
