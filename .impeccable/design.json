@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T13:30:06Z",
+  "title": "Design System: Confiable Tech — Light studio",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cool paper"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Near-black ink"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Soft graphite"
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Action orange"
+      },
+      "signal": {
+        "role": "primary",
+        "displayName": "Selection orange"
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Fine grey rule"
+      },
+      "on-accent": {
+        "role": "neutral",
+        "displayName": "On-accent white"
+      },
+      "inverse-muted": {
+        "role": "neutral",
+        "displayName": "Inverse support"
+      },
+      "inverse-rule": {
+        "role": "neutral",
+        "displayName": "Inverse rule"
+      },
+      "inverse-accent": {
+        "role": "primary",
+        "displayName": "Inverse orange"
+      },
+      "sovereign-surface": {
+        "role": "secondary",
+        "displayName": "Sovereign sage"
+      },
+      "sovereign-border": {
+        "role": "secondary",
+        "displayName": "Sovereign screenshot border"
+      },
+      "sovereign-ink": {
+        "role": "secondary",
+        "displayName": "Sovereign supporting ink"
+      },
+      "sovereign-hover": {
+        "role": "secondary",
+        "displayName": "Sovereign hover ink"
+      },
+      "sovereign-on-hover": {
+        "role": "neutral",
+        "displayName": "Sovereign hover label"
+      },
+      "aaq-surface": {
+        "role": "secondary",
+        "displayName": "Aprende lavender"
+      },
+      "aaq-border": {
+        "role": "secondary",
+        "displayName": "Aprende screenshot border"
+      },
+      "aaq-ink": {
+        "role": "secondary",
+        "displayName": "Aprende caption ink"
+      },
+      "ribbon-surface": {
+        "role": "neutral",
+        "displayName": "Screenshot sheet"
+      },
+      "ribbon-border": {
+        "role": "neutral",
+        "displayName": "Screenshot sheet edge"
+      },
+      "scrollbar": {
+        "role": "neutral",
+        "displayName": "Scrollbar grey"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero lines: clamp(88px,11.3vw,176px); 11.1vw at max-width:900px; 13.5vw first line and 12.8vw last line at max-width:650px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings: clamp(44px,6.1vw,88px); clamp(40px,10.3vw,64px) at max-width:650px. Studio and contact have their documented component-specific ranges."
+      },
+      "project-title": {
+        "displayName": "Project title",
+        "purpose": "Product names: clamp(32px,4.5vw,64px); clamp(32px,8.3vw,49px) at max-width:650px."
+      },
+      "project-statement": {
+        "displayName": "Project statement",
+        "purpose": "Story statements: clamp(30px,3.4vw,48px); 30px at max-width:900px, mobile stories 34px, narrow-phone stories 29px."
+      },
+      "service-title": {
+        "displayName": "Service title",
+        "purpose": "Native disclosure titles: clamp(24px,2.65vw,38px); 25px at max-width:650px and 23px at max-width:360px."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading baseline; paragraph measure generally capped at 70ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Captions, product categories, team roles and footer metadata."
+      },
+      "pill": {
+        "displayName": "Pill",
+        "purpose": "Body-sized action labels with compact line-height."
+      },
+      "serif-emphasis": {
+        "displayName": "Serif emphasis",
+        "purpose": "Upright emphasis inside headings and project statements. Hero emphasis uses 1.11em."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ribbon-sheet",
+        "value": "0 20px 24px -17px #0f0f0f38",
+        "purpose": "Depth behind the decorative diagonal screenshot sheets."
+      },
+      {
+        "name": "sovereign-screenshot",
+        "value": "0 25px 50px -22px #20382d44",
+        "purpose": "A soft shadow beneath the Sovereign dashboard screenshot."
+      },
+      {
+        "name": "aaq-screenshot",
+        "value": "0 25px 45px -25px #27233440",
+        "purpose": "A broad shallow shadow beneath the wide product screenshot."
+      },
+      {
+        "name": "compact-navigation",
+        "value": "0 16px 30px -20px #0f0f0f40",
+        "purpose": "The mobile navigation overlay at 650px and below."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Shared easing for navigation underlines, disclosure icons and contact-circle rotation."
+      },
+      {
+        "name": "pill-colours",
+        "value": "background .2s,color .2s,border-color .2s",
+        "purpose": "Filled and outlined pill hover transitions; default CSS easing."
+      },
+      {
+        "name": "navigation-underline",
+        "value": "transform .25s var(--ease)",
+        "purpose": "Left-origin underline expansion on navigation hover."
+      },
+      {
+        "name": "disclosure-icon",
+        "value": "transform .25s var(--ease)",
+        "purpose": "Rotate the plus 45 degrees when a native service disclosure is open."
+      },
+      {
+        "name": "contact-hover",
+        "value": "background .2s,transform .3s var(--ease)",
+        "purpose": "Darken the contact circle and rotate it 45 degrees on hover."
+      },
+      {
+        "name": "ribbon-drift",
+        "value": "Math.min(48, Math.max(0, -box.top) * 0.075)",
+        "purpose": "Native-scroll upward translation in px, clamped to 48px, scheduled through requestAnimationFrame only while the hero intersects the viewport."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "(prefers-reduced-motion:reduce)",
+        "purpose": "Remove animations, transitions, smooth scrolling and ribbon translation; suppress contact hover rotation. JavaScript removes the scroll listener and clears ribbon displacement."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow-phone",
+        "value": "360px",
+        "query": "(max-width:360px)"
+      },
+      {
+        "name": "mobile",
+        "value": "650px",
+        "query": "(max-width:650px)"
+      },
+      {
+        "name": "tablet",
+        "value": "900px",
+        "query": "(max-width:900px)"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1200px",
+        "query": "(max-width:1200px)"
+      },
+      {
+        "name": "wide-ribbon",
+        "value": "1600px",
+        "query": "(min-width:1600px)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary contact pill",
+      "kind": "button",
+      "refersTo": "pill-accent",
+      "description": "The filled orange email action, with source hover, focus and reduced-motion states.",
+      "html": "<a class=\"ds-primary\" href=\"mailto:admin@confiable.ai\">Let’s talk <svg class=\"ds-primary-arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:46px;padding:10px 22px;border-radius:100px;border:1px solid transparent;line-height:1.25;transition:background .2s,color .2s,border-color .2s;font-family:Geist,Arial,sans-serif;font-size:16px;font-weight:400;text-decoration:none;}.ds-primary{background:var(--accent,#bc3506);color:white}.ds-primary:hover{background:var(--ink,#0f0f0f)}.ds-primary:focus-visible{outline:2px solid var(--accent,#bc3506);outline-offset:6px}.ds-primary-arrow{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none!important}}"
+    },
+    {
+      "name": "Outlined product pill",
+      "kind": "button",
+      "refersTo": "pill-outline",
+      "description": "The outlined link primitive. In the Sovereign field its hover uses the separate product-specific colour pair.",
+      "html": "<a class=\"ds-outline\" href=\"https://sovereignhni.com\" target=\"_blank\" rel=\"noopener noreferrer\">Explore Sovereign <svg class=\"ds-outline-arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg><span class=\"ds-outline-sr\"> (opens in a new tab)</span></a>",
+      "css": ".ds-outline{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:46px;padding:10px 22px;border-radius:100px;border:1px solid transparent;line-height:1.25;transition:background .2s,color .2s,border-color .2s;font-family:Geist,Arial,sans-serif;font-size:16px;font-weight:400;color:var(--ink,#0f0f0f);text-decoration:none;}.ds-outline{border-color:currentColor}.ds-outline:hover{background:var(--ink,#0f0f0f);color:var(--paper,#e9e9eb)}.ds-outline:focus-visible{outline:2px solid var(--accent,#bc3506);outline-offset:6px}.ds-outline-arrow{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-outline-arrow{transform:rotate(-45deg)}@media(prefers-reduced-motion:reduce){.ds-outline{transition:none!important}}.ds-outline-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}"
+    },
+    {
+      "name": "Underlined text link",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "A light-surface inline link with the shared directional arrow and comfortable minimum height.",
+      "html": "<a class=\"ds-text-link\" href=\"mailto:admin@confiable.ai\">Start a conversation <svg class=\"ds-text-arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-text-link{display:inline-flex;align-items:center;gap:18px;min-height:44px;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px;font:400 16px/1.5 Geist,Arial,sans-serif;color:var(--ink,#0f0f0f);}.ds-text-link:hover{color:var(--accent,#bc3506)}.ds-text-link:focus-visible{outline:2px solid var(--accent,#bc3506);outline-offset:6px}.ds-text-arrow{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}"
+    },
+    {
+      "name": "Horizontal navigation",
+      "kind": "nav",
+      "description": "The wide-layout navigation row; the mobile toggle and focus-management behaviour remain described in DESIGN.md rather than fabricated by this static preview.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#work\">Work</a><a href=\"#services\">Services</a><a href=\"#studio\">Studio</a><a class=\"ds-nav-action\" href=\"mailto:admin@confiable.ai\">Let’s talk <svg class=\"ds-nav-arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:clamp(22px,3vw,48px);font:400 16px/1.5 Geist,Arial,sans-serif;color:var(--ink,#0f0f0f);}.ds-nav > a:not(.ds-nav-action){display:flex;align-items:center;min-height:44px;position:relative;color:inherit;text-decoration:none;}.ds-nav > a:not(.ds-nav-action)::after{content:'';position:absolute;left:0;right:0;bottom:7px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .25s var(--ease,cubic-bezier(.16,1,.3,1))}.ds-nav > a:hover::after{transform:scaleX(1)}.ds-nav-action{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:46px;padding:10px 22px;border-radius:100px;border:1px solid transparent;line-height:1.25;transition:background .2s,color .2s,border-color .2s;text-decoration:none;}.ds-nav-action{background:var(--accent,#bc3506);color:white}.ds-nav-action:hover{background:var(--ink,#0f0f0f)}.ds-nav a:focus-visible{outline:2px solid var(--accent,#bc3506);outline-offset:6px}.ds-nav-arrow{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}@media(prefers-reduced-motion:reduce){.ds-nav a,.ds-nav a::after{transition:none!important}}"
+    },
+    {
+      "name": "Native service accordion",
+      "kind": "custom",
+      "refersTo": "service-accordion",
+      "description": "An independently operable native disclosure on the dark service field; starts open like the first implemented service.",
+      "html": "<div class=\"ds-services\"><details open><summary><h3>Custom AI applications</h3><svg class=\"ds-detail-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5v14\"/></svg></summary><div class=\"ds-service-body\"><p>Web and mobile applications shaped around what people actually need. We develop AI-powered software, from intelligent assistants to tools that make complex information easier to work with.</p><a class=\"ds-service-link\" href=\"mailto:admin@confiable.ai?subject=Custom%20AI%20applications\">Talk about your application <svg class=\"ds-service-arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></a></div></details></div>",
+      "css": ".ds-services{background:#0f0f0f;color:var(--paper,#e9e9eb);font:400 16px/1.5 Geist,Arial,sans-serif;}.ds-services details{border-top:1px solid #515154}.ds-services details:last-child{border-bottom:1px solid #515154}.ds-services summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:30px;min-height:106px;padding:24px 0}.ds-services summary::-webkit-details-marker{display:none}.ds-services h3{font-size:clamp(24px,2.65vw,38px);line-height:1.15;letter-spacing:-.025em;font-weight:400;margin:0;}.ds-detail-icon{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.ds-detail-icon{width:28px;height:28px;transition:transform .25s var(--ease,cubic-bezier(.16,1,.3,1));color:#e9e9eb}.ds-services details[open] .ds-detail-icon{transform:rotate(45deg)}.ds-services summary:hover h3{color:#ff8c66}.ds-service-body{padding:0 65px 35px 0;max-width:740px}.ds-service-body p{color:#b9b9bd;max-width:62ch;margin-bottom:20px;margin-top:0;}.ds-service-link{display:inline-flex;align-items:center;gap:18px;min-height:44px;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px;color:inherit;}.ds-service-link:hover{color:#ff8c66}.ds-services summary:focus-visible{outline:2px solid var(--accent,#bc3506);outline-offset:6px;outline-color:#ff8c66;}.ds-service-link:focus-visible{outline:2px solid var(--accent,#bc3506);outline-offset:6px;outline-color:#ff8c66;}.ds-service-arrow{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}@media(max-width:650px){.ds-services summary{min-height:96px;gap:22px;padding:24px 0}.ds-services h3{font-size:25px;max-width:18ch}.ds-service-body{padding:0 0 28px}}@media(prefers-reduced-motion:reduce){.ds-detail-icon{transition:none!important}}"
+    },
+    {
+      "name": "Rule-led team entry",
+      "kind": "card",
+      "refersTo": "team-entry",
+      "description": "An open text article with a fine top rule, not a filled or elevated card.",
+      "html": "<article class=\"ds-team\"><h3>Pedro Pellicer Coloma</h3><p class=\"ds-team-role\">CEO &amp; Founder</p><p>Leading Confiable Tech at the intersection of artificial intelligence and the humanities.</p></article>",
+      "css": ".ds-team{border-top:1px solid var(--rule,#bcbcbf);padding-top:25px;font:400 16px/1.5 Geist,Arial,sans-serif;color:var(--ink,#0f0f0f);}.ds-team h3{font-size:clamp(23px,2.1vw,30px);line-height:1.2;letter-spacing:-.03em;font-weight:400;margin:0;}.ds-team-role{margin:9px 0 24px;font-size:14px}.ds-team > p:last-child{color:var(--muted,#535357);max-width:32ch;margin:0;}@media(max-width:650px){.ds-team h3{font-size:26px}.ds-team-role{margin-bottom:16px}.ds-team > p:last-child{max-width:38ch}}"
+    },
+    {
+      "name": "Circular contact arrow",
+      "kind": "button",
+      "refersTo": "contact-arrow",
+      "description": "An icon-only email link with responsive circle sizes, diagonal arrow, hover rotation and a reduced-motion alternative.",
+      "html": "<a class=\"ds-contact\" href=\"mailto:admin@confiable.ai\" aria-label=\"Email Confiable Tech\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-contact{display:flex;align-items:center;justify-content:center;width:130px;height:130px;border-radius:50%;background:var(--accent,#bc3506);color:white;flex-shrink:0;transition:background .2s,transform .3s var(--ease,cubic-bezier(.16,1,.3,1));text-decoration:none;}.ds-contact svg{width:64px;height:64px;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;transform:rotate(-45deg)}.ds-contact:hover{background:var(--ink,#0f0f0f);transform:rotate(45deg)}.ds-contact:focus-visible{outline:2px solid var(--accent,#bc3506);outline-offset:6px}@media(max-width:900px){.ds-contact{width:95px;height:95px}.ds-contact svg{width:48px;height:48px}}@media(max-width:650px){.ds-contact{width:64px;height:64px;margin-top:30px}.ds-contact svg{width:35px;height:35px}}@media(prefers-reduced-motion:reduce){.ds-contact{transition:none!important}.ds-contact:hover{transform:none}}"
+    },
+    {
+      "name": "Mixed-face section heading",
+      "kind": "custom",
+      "refersTo": "mixed-face-heading",
+      "description": "A source section heading pairing regular Geist with upright Instrument Serif on the same line.",
+      "html": "<h2 class=\"ds-heading\">Ideas, <em>in practice.</em></h2>",
+      "css": ".ds-heading{font-size:clamp(44px,6.1vw,88px);line-height:1.02;letter-spacing:-.04em;text-wrap:balance;font-family:Geist,Arial,sans-serif;font-weight:400;color:var(--ink,#0f0f0f);margin:0;}.ds-heading em{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-style:normal;letter-spacing:-.025em}@media(max-width:650px){.ds-heading{font-size:clamp(40px,10.3vw,64px)}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Light studio",
+    "overview": "Light studio pairs cool-grey space and near-black typography with a restrained orange action colour. Geist supplies clarity; upright Instrument Serif brings a human voice inside the same headline. The visual character is spacious, direct and editorial rather than ornamental.\n\nReal product screens provide the imagery and most of the colour. Broad, square-edged project fields sit alongside fine rules, open text and a dark service surface. Depth is reserved for screenshot sheets and the compact navigation overlay, leaving the surrounding page calm.",
+    "keyCharacteristics": [
+      "Large mixed-face headlines with regular-weight sans-serif structure and upright serif emphasis.",
+      "A cool-grey canvas, near-black text and deliberate orange contact actions.",
+      "Actual product imagery on square-edged, softly tinted presentation fields.",
+      "Fine rules, generous whitespace and minimal interface chrome.",
+      "Native disclosures, progressively enhanced navigation and reduced-motion support."
+    ],
+    "rules": [
+      {
+        "name": "The Two Orange Roles Rule",
+        "body": "Use the deeper accent for white-labelled actions and light-surface focus; reserve the brighter signal for text selection. Dark surfaces use the lighter inverse accent for hover and focus.",
+        "section": "colors"
+      },
+      {
+        "name": "The Shared Line Rule",
+        "body": "Keep serif emphasis inside the sans-serif headline, at regular weight and normal style; it is a change of voice, not an italic effect.",
+        "section": "typography"
+      },
+      {
+        "name": "The Image Depth Rule",
+        "body": "Keep text sections and project fields flat. Give depth to screenshot sheets and the compact navigation overlay, not to every content block.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the Light studio pairing of Geist and upright Instrument Serif.",
+      "Do use the deeper action accent for white-labelled contact controls and the brighter signal for selection.",
+      "Do present real product screenshots, preserving their legibility and aspect ratio in project galleries.",
+      "Do retain fluid page edges, generous section space and single-column mobile layouts.",
+      "Do preserve native disclosure semantics, visible keyboard focus and a readable no-JavaScript navigation fallback.",
+      "Do disable ribbon drift, transitions and smooth scrolling when reduced motion is requested."
+    ],
+    "donts": [
+      "Don't turn the page into a generic tech gradient or an equal icon-card grid.",
+      "Don't replace real product imagery with decorative mock dashboards or fabricated metrics.",
+      "Don't make Instrument Serif italic or use it as the body font.",
+      "Don't round the project fields or apply card shadows to ordinary text sections.",
+      "Don't use the brighter selection signal as a substitute for the deeper white-labelled action background.",
+      "Don't introduce inputs, forms, filters or modal patterns as if they were part of this implemented system."
+    ]
+  }
+}
